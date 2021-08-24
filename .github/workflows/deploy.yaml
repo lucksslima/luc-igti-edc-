@@ -29,9 +29,9 @@ jobs:
           aws-region: us-east-1
       
       -name: IaC Apply
-        env:
+        env: 
           COMMAND_IAC: Terraform
-        run: 
+        run: |
           cd infrastructure
           $COMMAND_IAC init
           $COMMAND_IAC validate
